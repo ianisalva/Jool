@@ -5,7 +5,7 @@ AC_PREREQ([2.68])
 AC_INIT([Jool], [4.1.10], [jool@nic.mx])
 AC_CONFIG_SRCDIR([src/common/xlat.h])
 AM_INIT_AUTOMAKE([subdir-objects])
-LT_PREREQ([2.4.6])
+LT_PREREQ([2.4.2])
 
 # Checks for programs.
 AC_PROG_CC
@@ -34,7 +34,7 @@ AC_SEARCH_LIBS([pthread_create], [pthread])
 AC_CHECK_LIB([argp], [argp_parse])
 
 # Dependency: libnlgenl (mandatory)
-PKG_CHECK_MODULES(LIBNLGENL3, libnl-genl-3.0 >= 3.2.22)
+PKG_CHECK_MODULES(LIBNLTINY, libnl-tiny) 
 
 # Dependency: xtables (optional)
 AC_ARG_WITH(
