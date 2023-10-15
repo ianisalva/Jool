@@ -10,9 +10,9 @@ joold_SOURCES = \
 
 joold_CFLAGS  = ${WARNINGCFLAGS}
 joold_CFLAGS += -I${top_srcdir}/src
-joold_CFLAGS += ${LIBNLGENL3_CFLAGS}
+joold_CFLAGS += ${LIBNLTINY_CFLAGS}
 
-joold_LDADD  = ${LIBNLGENL3_LIBS}
+joold_LDADD  = ${LIBNLTINY_LIBS}
 joold_LDADD += ../nl/libjoolnl.la
 joold_LDADD += ../util/libjoolutil.la
 
